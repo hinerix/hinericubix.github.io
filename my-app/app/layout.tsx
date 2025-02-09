@@ -7,24 +7,8 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Enterprise Solutions - Transform Your Business',
+  title: 'Hineri Cubix',
   description: 'Leading enterprise solutions provider helping businesses transform digitally with cutting-edge technology and expert consulting services.',
-  openGraph: {
-    title: 'Enterprise Solutions - Transform Your Business',
-    description: 'Leading enterprise solutions provider helping businesses transform digitally with cutting-edge technology and expert consulting services.',
-    url: 'https://enterprise-solutions.com',
-    siteName: 'Enterprise Solutions',
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1497366216548-37526070297c',
-        width: 1200,
-        height: 630,
-        alt: 'Enterprise Solutions',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
 };
 
 export default function RootLayout({
@@ -33,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="ja" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <script
           type="application/ld+json"

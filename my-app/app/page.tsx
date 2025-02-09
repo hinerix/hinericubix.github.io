@@ -13,7 +13,7 @@ export default function Home() {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <Building2 className="h-8 w-8" />
-              <span className="ml-2 text-xl font-bold">Enterprise</span>
+              <span className="ml-2 text-xl font-bold">ひねりキュービックス</span>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#services" className="text-muted-foreground hover:text-foreground">Services</a>
@@ -37,10 +37,10 @@ export default function Home() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
             <div className="mb-12 lg:mb-0">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Transform Your Business with Enterprise Solutions
+                ITの「感動」を<br/>あなたに。
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Empower your organization with cutting-edge technology and expert consulting services.
+                パソコンが苦手な方でも、ITの「便利」を使って仕事を効率化しませんか？
               </p>
               <div className="flex space-x-4">
                 <Button size="lg">
@@ -70,24 +70,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Our Services</h2>
-            <p className="text-xl text-muted-foreground">Comprehensive solutions for modern enterprises</p>
+            <p className="text-xl text-muted-foreground">
+              ひねりキュービックスは小さなビジネスの「不便」を解消するお手伝いをしているサービスです。
+            </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {[
               {
                 icon: <Globe2 className="h-8 w-8" />,
-                title: "Digital Transformation",
-                description: "Modernize your business with cutting-edge digital solutions"
+                title: "ITツールの使い方サポート",
+                description: "日常で利用されているExcelやGoogleスプレッドシートの上手な使い方をサポートします。"
               },
               {
                 icon: <BarChart3 className="h-8 w-8" />,
-                title: "Data Analytics",
-                description: "Transform your data into actionable insights"
-              },
-              {
-                icon: <Users className="h-8 w-8" />,
-                title: "Consulting Services",
-                description: "Expert guidance for your business challenges"
+                title: "Webサイト、LP制作",
+                description: "お店や商品の魅力そのものが伝わるシンプルなデザインが得意です。"
               }
             ].map((feature, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
@@ -105,21 +102,21 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Case Studies</h2>
-            <p className="text-xl text-muted-foreground">Success stories from our clients</p>
+            <p className="text-xl text-muted-foreground">サービス提供事例をご紹介します。</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                company: "Tech Corp",
+                company: "退職代行サービス Byeバイト",
                 image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-                title: "Digital Transformation Success",
-                description: "How we helped Tech Corp achieve 200% growth"
+                title: "LP制作",
+                description: "200%のユーザーの増加に貢献しました。"
               },
               {
-                company: "Finance Plus",
+                company: "",
                 image: "https://images.unsplash.com/photo-1554469384-e58fac16e23a",
-                title: "Analytics Implementation",
-                description: "Revolutionizing data-driven decision making"
+                title: "Coming Soon",
+                description: ""
               }
             ].map((study, index) => (
               <Card key={index} className="overflow-hidden">
@@ -148,24 +145,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Pricing Plans</h2>
-            <p className="text-xl text-muted-foreground">Choose the perfect plan for your business</p>
+            <p className="text-xl text-muted-foreground">サービスごとの料金プランです。</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                name: "Starter",
-                price: "$499",
+                name: "ITツールの使い方サポート",
+                price: "時給4,000円～",
                 features: ["Basic consulting", "5 user licenses", "Email support"]
               },
               {
-                name: "Professional",
-                price: "$999",
+                name: "Webサイト、LP制作",
+                price: "50,000円～",
                 features: ["Advanced consulting", "20 user licenses", "Priority support"]
-              },
-              {
-                name: "Enterprise",
-                price: "Custom",
-                features: ["Full service suite", "Unlimited licenses", "24/7 support"]
               }
             ].map((plan, index) => (
               <Card key={index} className="p-6">
@@ -193,10 +185,10 @@ export default function Home() {
             <div>
               <div className="flex items-center mb-4">
                 <Building2 className="h-8 w-8" />
-                <span className="ml-2 text-xl font-bold">Enterprise</span>
+                <span className="ml-2 text-xl font-bold">ひねりキュービックス</span>
               </div>
               <p className="text-muted-foreground">
-                Transforming businesses with innovative solutions.
+                パソコンが苦手な方でも、ITの「便利」を使って仕事を効率化しませんか？
               </p>
             </div>
             <div>
@@ -218,14 +210,12 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>123 Business Avenue</li>
-                <li>San Francisco, CA 94105</li>
-                <li>contact@enterprise.com</li>
+                <li>hinericubix@gmail.com</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-            <p>&copy; 2025 Enterprise Solutions. All rights reserved.</p>
+            <p>&copy; 2025 Hineri Cubix. All rights reserved.</p>
           </div>
         </div>
       </footer>
