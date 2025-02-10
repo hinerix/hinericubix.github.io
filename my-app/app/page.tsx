@@ -7,7 +7,6 @@ import {
 	CheckCircle2,
 	ChevronRight,
 	Globe2,
-	Users,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -20,7 +19,7 @@ export default function Home() {
 					<div className="flex justify-between items-center py-4">
 						<div className="flex items-center">
 							<Building2 className="h-8 w-8" />
-							<span className="ml-2 text-xl font-bold">
+							<span className="ml-2 text-lg">
 								ひねりキュービックス
 							</span>
 						</div>
@@ -71,7 +70,7 @@ export default function Home() {
 								あなたに。
 							</h1>
 							<p className="text-xl text-muted-foreground mb-8">
-								パソコンが苦手な方でも、ITの「便利」を使って仕事を効率化しませんか？
+								パソコンが苦手な方でも大丈夫。<br />一緒に仕事を効率化しませんか？
 							</p>
 							<div className="flex space-x-4">
 								<Button size="lg">
@@ -203,18 +202,18 @@ export default function Home() {
 								name: "ITツールの使い方サポート",
 								price: "時給4,000円～",
 								features: [
-									"Basic consulting",
-									"5 user licenses",
-									"Email support",
+									"基礎的な利用方法のレクチャー",
+									"業務での実践的な運用支援",
+									"対面、ビデオ通話、メールでのサポート",
 								],
 							},
 							{
 								name: "Webサイト、LP制作",
 								price: "50,000円～",
 								features: [
-									"Advanced consulting",
-									"20 user licenses",
-									"Priority support",
+									"デザイン、構成の打ち合わせ",
+									"Webサイトからの流入分析",
+									"運用、保守のサポート",
 								],
 							},
 						].map((plan) => (
@@ -250,9 +249,6 @@ export default function Home() {
 									ひねりキュービックス
 								</span>
 							</div>
-							<p className="text-muted-foreground">
-								パソコンが苦手な方でも、ITの「便利」を使って仕事を効率化しませんか？
-							</p>
 						</div>
 						<div>
 							<h4 className="text-lg font-semibold mb-4">Company</h4>

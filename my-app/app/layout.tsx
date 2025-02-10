@@ -4,12 +4,14 @@ import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+	subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
-	title: "Hineri Cubix",
+	title: "ひねりキュービックス",
 	description:
-		"Leading enterprise solutions provider helping businesses transform digitally with cutting-edge technology and expert consulting services.",
+		"ひねりキュービックスはビジネスの小さな「不便」をITで解決するお手伝いをしているサービスです。",
 };
 
 export default function RootLayout({
