@@ -1,4 +1,5 @@
-import { ThemeToggle } from "@/components/theme-toggle";
+import Footer from "@/components/layouts/Footer";
+import Header from "@/components/layouts/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -14,50 +15,7 @@ export default function Home() {
 	return (
 		<div className="min-h-screen">
 			{/* Header */}
-			<header className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="flex justify-between items-center py-4">
-						<div className="flex items-center">
-							<Building2 className="h-8 w-8" />
-							<span className="ml-2 text-lg">
-								ひねりキュービックス
-							</span>
-						</div>
-						<nav className="hidden md:flex space-x-8">
-							<a
-								href="#services"
-								className="text-muted-foreground hover:text-foreground"
-							>
-								Services
-							</a>
-							<a
-								href="#case-studies"
-								className="text-muted-foreground hover:text-foreground"
-							>
-								Case Studies
-							</a>
-							<a
-								href="#pricing"
-								className="text-muted-foreground hover:text-foreground"
-							>
-								Pricing
-							</a>
-							<a
-								href="#contact"
-								className="text-muted-foreground hover:text-foreground"
-							>
-								Contact
-							</a>
-						</nav>
-						<div className="flex items-center space-x-4">
-							<ThemeToggle />
-							<Button variant="outline" className="hidden md:inline-flex">
-								Get Started
-							</Button>
-						</div>
-					</div>
-				</div>
-			</header>
+			<Header />
 
 			{/* Hero Section */}
 			<section className="pt-32 pb-24 bg-background">
@@ -70,7 +28,9 @@ export default function Home() {
 								あなたに。
 							</h1>
 							<p className="text-xl text-muted-foreground mb-8">
-								パソコンが苦手な方でも大丈夫。<br />一緒に仕事を効率化しませんか？
+								パソコンが苦手な方でも大丈夫。
+								<br />
+								一緒に仕事を効率化しませんか？
 							</p>
 							<div className="flex space-x-4">
 								<Button size="lg">
@@ -239,87 +199,7 @@ export default function Home() {
 			</section>
 
 			{/* Footer */}
-			<footer className="bg-muted py-12">
-				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-					<div className="grid md:grid-cols-4 gap-8">
-						<div>
-							<div className="flex items-center mb-4">
-								<Building2 className="h-8 w-8" />
-								<span className="ml-2 text-xl font-bold">
-									ひねりキュービックス
-								</span>
-							</div>
-						</div>
-						<div>
-							<h4 className="text-lg font-semibold mb-4">Company</h4>
-							<ul className="space-y-2">
-								<li>
-									<a
-										href="/about"
-										className="text-muted-foreground hover:text-foreground"
-									>
-										About
-									</a>
-								</li>
-								<li>
-									<a
-										href="/careers"
-										className="text-muted-foreground hover:text-foreground"
-									>
-										Careers
-									</a>
-								</li>
-								<li>
-									<a
-										href="#contact"
-										className="text-muted-foreground hover:text-foreground"
-									>
-										Contact
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h4 className="text-lg font-semibold mb-4">Legal</h4>
-							<ul className="space-y-2">
-								<li>
-									<a
-										href="/privacy-policy"
-										className="text-muted-foreground hover:text-foreground"
-									>
-										Privacy Policy
-									</a>
-								</li>
-								<li>
-									<a
-										href="/terms-of-service"
-										className="text-muted-foreground hover:text-foreground"
-									>
-										Terms of Service
-									</a>
-								</li>
-								<li>
-									<a
-										href="/cookie-policy"
-										className="text-muted-foreground hover:text-foreground"
-									>
-										Cookie Policy
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h4 className="text-lg font-semibold mb-4">Contact</h4>
-							<ul className="space-y-2 text-muted-foreground">
-								<li>hinericubix@gmail.com</li>
-							</ul>
-						</div>
-					</div>
-					<div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-						<p>&copy; 2025 Hineri Cubix. All rights reserved.</p>
-					</div>
-				</div>
-			</footer>
+			<Footer />
 		</div>
 	);
 }
