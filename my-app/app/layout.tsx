@@ -2,9 +2,14 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { BIZ_UDPGothic, Inter } from "next/font/google";
 
 const inter = Inter({
+	subsets: ["latin"],
+});
+
+const bizUdpGothic = BIZ_UDPGothic({
+	weight: "400",
 	subsets: ["latin"],
 });
 
@@ -42,7 +47,7 @@ export default function RootLayout({
 					})}
 				</script>
 			</head>
-			<body className={inter.className}>
+			<body className={`${inter.className} ${bizUdpGothic.className}`}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

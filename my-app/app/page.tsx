@@ -2,13 +2,7 @@ import Footer from "@/components/layouts/Footer";
 import Header from "@/components/layouts/Header";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import {
-	BarChart3,
-	Building2,
-	CheckCircle2,
-	ChevronRight,
-	Globe2,
-} from "lucide-react";
+import { BarChart3, CheckCircle2, ChevronRight, Globe2 } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -44,7 +38,7 @@ export default function Home() {
 						</div>
 						<div className="relative h-[400px] rounded-lg overflow-hidden">
 							<Image
-								src="https://images.unsplash.com/photo-1497366216548-37526070297c"
+								src="/images/home/home.png"
 								alt="Enterprise Solutions"
 								fill
 								className="object-cover"
@@ -106,24 +100,22 @@ export default function Home() {
 					<div className="grid md:grid-cols-2 gap-8">
 						{[
 							{
-								id: "bye-bite",
+								id: "byeWork",
 								company: "退職代行サービス Byeバイト",
-								image:
-									"https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
+								image: "/images/caseStudies/Byeバイト.png",
 								title: "LP制作",
 								description: "200%のユーザーの増加に貢献しました。",
 							},
 							{
 								id: "coming-soon",
 								company: "",
-								image:
-									"https://images.unsplash.com/photo-1554469384-e58fac16e23a",
+								image: "/images/home/coming-soon.png",
 								title: "Coming Soon",
 								description: "",
 							},
 						].map((study) => (
 							<Card key={study.id} className="overflow-hidden">
-								<div className="relative h-48">
+								<div className="relative h-72">
 									<Image
 										src={study.image}
 										alt={study.title}
