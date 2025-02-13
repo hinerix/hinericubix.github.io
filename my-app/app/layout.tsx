@@ -1,6 +1,4 @@
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 import { BIZ_UDPGothic, Inter } from "next/font/google";
 
@@ -48,15 +46,7 @@ export default function RootLayout({
 				</script>
 			</head>
 			<body className={`${inter.className} ${bizUdpGothic.className}`}>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				>
 					{children}
-					<Toaster />
-				</ThemeProvider>
 			</body>
 		</html>
 	);

@@ -7,15 +7,6 @@ export default function Footer() {
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="grid md:grid-cols-4 gap-8">
 						<div>
-							<div className="flex items-center mb-4">
-								<Building2 className="h-8 w-8" />
-								<span className="ml-2 text-xl font-bold">
-									ひねりキュービックス
-								</span>
-							</div>
-						</div>
-						<div>
-							<h4 className="text-lg font-semibold mb-4">Company</h4>
 							<ul className="space-y-2">
 								<li>
 									<a
@@ -44,7 +35,6 @@ export default function Footer() {
 							</ul>
 						</div>
 						<div>
-							<h4 className="text-lg font-semibold mb-4">Legal</h4>
 							<ul className="space-y-2">
 								<li>
 									<a
@@ -57,7 +47,6 @@ export default function Footer() {
 							</ul>
 						</div>
 						<div>
-							<h4 className="text-lg font-semibold mb-4">Contact</h4>
 							<ul className="space-y-2 text-muted-foreground">
 								<li>hinericubix@gmail.com</li>
 							</ul>
