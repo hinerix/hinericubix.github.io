@@ -72,9 +72,7 @@ export default function About() {
 											Get Started
 											<ChevronRight className="ml-2 h-4 w-4" />
 										</button>
-										<button type="button">
-											Learn More
-										</button>
+										<button type="button">Learn More</button>
 									</div>
 								</div>
 								<div className="relative h-[400px] rounded-lg overflow-hidden">
@@ -121,8 +119,12 @@ export default function About() {
 										className="p-6 hover:shadow-lg transition-shadow"
 									>
 										<div className="mb-4">{feature.icon}</div>
-										<h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-										<p className="text-muted-foreground">{feature.description}</p>
+										<h3 className="text-xl font-semibold mb-2">
+											{feature.title}
+										</h3>
+										<p className="text-muted-foreground">
+											{feature.description}
+										</p>
 									</div>
 								))}
 							</div>
@@ -170,7 +172,9 @@ export default function About() {
 											<div className="text-sm text-muted-foreground mb-2">
 												{study.company}
 											</div>
-											<h3 className="text-xl font-semibold mb-2">{study.title}</h3>
+											<h3 className="text-xl font-semibold mb-2">
+												{study.title}
+											</h3>
 											<p className="text-muted-foreground mb-4">
 												{study.description}
 											</p>
@@ -246,11 +250,17 @@ export default function About() {
 							</div>
 							<div className="flex flex-col items-center">
 								<div className="border border-gray-200 p-8 rounded-lg">
-									<h3 className="text-xl font-bold mb-2">お問い合わせフォーム</h3>
+									<h3 className="text-xl font-bold mb-2">
+										お問い合わせフォーム
+									</h3>
 									<p className="text-muted-foreground mb-6">
 										以下のボタンからお問い合わせフォームにアクセスできます。
 									</p>
-									<a href="https://forms.gle/kqDmMQxbXq7x1VTd9" target="_blank" rel="noopener noreferrer">
+									<a
+										href="https://forms.gle/kqDmMQxbXq7x1VTd9"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
 										<button type="button">Contact Us</button>
 									</a>
 								</div>

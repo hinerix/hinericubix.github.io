@@ -18,11 +18,20 @@ export default function Home() {
 						<h1 className="mt-5 text-xl">ひねりキュービックス</h1>
 					</header>
 					<div className="mt-16 flex flex-col gap-7 leading-looser tracking-wide">
-						<p>ひねりキュービックスは、パソコンやスマホの「ちょっとした困った」を気軽に相談できる、お手伝いサービスです。</p>
-						<p>「調べてもさっぱり分からない」「どうも便利に使いこなせない」は誰にでもあります。</p>
-						<p>でも、相談できる人が身の回りにいる人は多くありません。そんな方々のための拠り所です。</p>
 						<p>
-							<Link href="/about" className="text-blue-400 hover:text-blue-300 duration-500 underline underline-offset-4 decoration-dotted">
+							ひねりキュービックスは、パソコンやスマホの「ちょっとした困った」を気軽に相談できる、お手伝いサービスです。
+						</p>
+						<p>
+							「調べてもさっぱり分からない」「どうも便利に使いこなせない」は誰にでもあります。
+						</p>
+						<p>
+							でも、相談できる人が身の回りにいる人は多くありません。そんな方々のための拠り所です。
+						</p>
+						<p>
+							<Link
+								href="/about"
+								className="text-blue-400 hover:text-blue-300 duration-500 underline underline-offset-4 decoration-dotted"
+							>
 								できることを見る →
 							</Link>
 						</p>
@@ -33,7 +42,10 @@ export default function Home() {
 								<h2>
 									<p>パソコンやスマホのお困りごと、相談してみませんか？</p>
 								</h2>
-								<button type="button" className="inline-flex items-center justify-center duration-500 leading-[1.1] border border-gray-300 rounded-full disabled:border-gray-200 disabled:opacity-60 hover:bg-gray-100 hover:border-gray-400 hover:disabled:bg-white py-3.5 px-6 tracking-wider">
+								<button
+									type="button"
+									className="inline-flex items-center justify-center duration-500 leading-[1.1] border border-gray-300 rounded-full disabled:border-gray-200 disabled:opacity-60 hover:bg-gray-100 hover:border-gray-400 hover:disabled:bg-white py-3.5 px-6 tracking-wider"
+								>
 									相談してみる
 								</button>
 							</div>
@@ -44,15 +56,12 @@ export default function Home() {
 									width={200}
 									height={200}
 								/>
-
 							</div>
-
 						</div>
-
 					</div>
 
-			{/* Footer */}
-			<Footer />
+					{/* Footer */}
+					<Footer />
 				</section>
 			</div>
 		</div>

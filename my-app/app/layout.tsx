@@ -46,7 +46,7 @@ export default function RootLayout({
 				</script>
 			</head>
 			<body className={`${inter.className} ${bizUdpGothic.className}`}>
-					{children}
+				{children}
 			</body>
 		</html>
 	);
