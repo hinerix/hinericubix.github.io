@@ -1,14 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { BIZ_UDPGothic, Inter } from "next/font/google";
+import localFont from "next/font/local";
 
-const inter = Inter({
-	subsets: ["latin"],
-});
-
-const bizUdpGothic = BIZ_UDPGothic({
-	weight: "400",
-	subsets: ["latin"],
+const genJyuuGothic = localFont({
+	src: "/fonts/GenJyuuGothicL-Normal.ttf",
+	display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +19,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang="ja" className="scroll-smooth" suppressHydrationWarning>
+		<html
+			lang="ja"
+			className={`scroll-smooth ${genJyuuGothic.className}`}
+			suppressHydrationWarning
+		>
 			<head>
 				<script type="application/ld+json" id="org-schema">
 					{JSON.stringify({
@@ -45,9 +45,7 @@ export default function RootLayout({
 					})}
 				</script>
 			</head>
-			<body className={`${inter.className} ${bizUdpGothic.className}`}>
-				{children}
-			</body>
+			<body className="bg-gradient-to-tl from-amber-50 to-yellow-50 text-gray-900 selection:bg-sky-100">{children}</body>
 		</html>
 	);
 }

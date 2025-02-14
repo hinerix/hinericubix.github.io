@@ -1,10 +1,11 @@
-import Footer from "@/components/layouts/Footer";
+import ContactCard from "@/components/ContactCard";
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
 	return (
-		<div className="min-h-screen bg-amber-50">
+		<div className="min-h-screen">
 			<div className="mx-auto w-full px-6 xs:px-7 sm:px-10 max-w-screen-md ">
 				<section className="pt-24">
 					<header className="flex flex-col items-center">
@@ -23,10 +24,10 @@ export default function Home() {
 						</p>
 						<p>
 							「調べてもさっぱり分からない」「どうも便利に使いこなせない」は誰にでもあります。
+							<br />
+							でも、相談できる人が身の回りにいる人は多くありません。
 						</p>
-						<p>
-							でも、相談できる人が身の回りにいる人は多くありません。そんな方々のための拠り所です。
-						</p>
+						<p>そんな方々のための拠り所です。</p>
 						<p>
 							<Link
 								href="/about"
@@ -36,34 +37,15 @@ export default function Home() {
 							</Link>
 						</p>
 					</div>
+					<ContactCard />
 					<div className="mt-16">
-						<div className="p-7 sm:flex sm:p-8">
-							<div className="flex flex-1 flex-col items-start gap-4 leading-relaxed">
-								<h2>
-									<p>パソコンやスマホのお困りごと、相談してみませんか？</p>
-								</h2>
-								<button
-									type="button"
-									className="inline-flex items-center justify-center duration-500 leading-[1.1] border border-gray-300 rounded-full disabled:border-gray-200 disabled:opacity-60 hover:bg-gray-100 hover:border-gray-400 hover:disabled:bg-white py-3.5 px-6 tracking-wider"
-								>
-									相談してみる
-								</button>
-							</div>
-							<div className="mt-4 mb-2 flex justify-end sm:mt-6">
-								<Image
-									src="/images/home/home2.png"
-									alt="Home"
-									width={200}
-									height={200}
-								/>
-							</div>
-						</div>
+						<p className="mt-20 mb-10 flex items-center justify-center text-sm text-gray-600">
+							&copy; 2025 Hinericubix All rights reserved.
+						</p>
 					</div>
-
-					{/* Footer */}
-					<Footer />
 				</section>
 			</div>
+			<Footer />
 		</div>
 	);
 }

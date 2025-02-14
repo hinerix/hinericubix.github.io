@@ -1,8 +1,9 @@
 "use client";
 
-import Header from "@/components/layouts/Header";
+import ContactCard from "@/components/ContactCard";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import Image from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Byework() {
@@ -27,16 +28,16 @@ export default function Byework() {
 		<div className="flex min-h-screen flex-col">
 			<Header />
 			<div className="min-h-screen">
-				<section className="mt-16 pb-32">
+				<section className="mt-16 pb-20">
 					<div className="mx-auto w-full px-6 xs:px-7 sm:px-10 max-w-screen-md">
 						<header className="flex flex-col items-center">
-							<h1 className="text-xl">退職代行 Byeバイト</h1>
+							<h1 className="text-xl">【インタビュー】退職代行 Byeバイト様</h1>
 							<Image
 								src="/images/caseStudies/Byeバイト.png"
 								alt="Byeバイト_画像"
 								width={1080}
 								height={720}
-								className="mt-6 border border-gray-200"
+								className="shadow rounded-3xl mt-6"
 							/>
 						</header>
 						{/* LP制作後のインタビュー導入 */}
@@ -50,7 +51,7 @@ export default function Byework() {
 									href="https://jlsu-dev.github.io/byework/"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-blue-500 hover:underline"
+									className="text-blue-400 hover:text-blue-300 duration-500 underline underline-offset-4 decoration-dotted"
 								>
 									Byeバイト公式サイト
 								</a>
@@ -207,8 +208,10 @@ export default function Byework() {
 								</p>
 							</section>
 						</div>
+						<ContactCard />
 					</div>
 				</section>
+				<Footer />
 			</div>
 		</div>
 	);

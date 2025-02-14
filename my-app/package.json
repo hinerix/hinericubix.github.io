@@ -2,21 +2,29 @@
 	"name": "nextjs",
 	"version": "0.1.0",
 	"dependencies": {
-		"@biomejs/biome": "^1.9.4",
+		"@next/swc-wasm-nodejs": "^15.1.7",
+		"@tailwindcss/postcss": "^4.0.6",
+		"@types/node": "^22.13.4",
 		"@types/react": "^19.0.8",
+		"@types/react-dom": "^19.0.3",
 		"lucide-react": "^0.446.0",
 		"next": "^15.1.7",
+		"postcss": "^8.5.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"tailwindcss": "^4.0.6",
-		"tailwindcss-animate": "^1.0.7"
+		"typescript": "^5.7.3"
 	},
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
+		"start": "serve out/",
+		"lint": "biome check --write"
 	},
-	"trustedDependencies": ["@biomejs/biome"]
+	"trustedDependencies": ["@biomejs/biome"],
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"serve": "^14.2.4"
+	}
 }
