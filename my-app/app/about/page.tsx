@@ -9,7 +9,7 @@ export default function About() {
 		<div className="flex min-h-screen flex-col">
 			<Header />
 			<div className="min-h-screen">
-				<section className="mt-16 pb-32">
+				<section className="mt-16 pb-20">
 					<div className="mx-auto w-full px-6 xs:px-7 sm:px-10 max-w-screen-md">
 						<header className="flex flex-col items-center">
 							<h1 className="text-xl">このサービスについて</h1>
@@ -18,7 +18,6 @@ export default function About() {
 								alt="About"
 								width={200}
 								height={200}
-								className="pt-5"
 							/>
 						</header>
 						<div className="mt-6 text-base leading-loose">
@@ -27,15 +26,6 @@ export default function About() {
 								「世の中には、母のように困っている人がたくさん居るかもしれない。」
 							</p>
 							<p className="mt-4">そんな思いから、このサービスを作りました。</p>
-							{/* <div className="flex justify-center">
-								<Image
-									src="/images/about/about2.png"
-									alt="About"
-									width={200}
-									height={200}
-									className="pt-5"
-								/>
-							</div> */}
 							<p className="mt-4">
 								私は過去に勤めていた会社で、IT機器のトラブルサポートを約7年経験してきました。
 							</p>
@@ -50,7 +40,6 @@ export default function About() {
 									alt="お悩み相談_画像"
 									width={200}
 									height={200}
-									className=""
 								/>
 							</p>
 							<p className="mt-4">
@@ -71,7 +60,6 @@ export default function About() {
 									alt="Webサイト/LP制作_画像"
 									width={200}
 									height={200}
-									className=""
 								/>
 							</p>
 							<p className="mt-4">
@@ -114,13 +102,50 @@ export default function About() {
 									className=""
 								/>
 							</p>
-							<p className="mt-6">
+							<p className="mt-4">
 								サービスごとの料金プランです。
 							</p>
-							<ul className="flex list-disc flex-col gap-3 pl-5 leading-default mt-4">
-								<li>ITツールの使い方サポート</li>
-								<li>Webサイト/LP制作</li>
-							</ul>
+
+							<div className="mt-4 sm:flex sm:gap-8">
+								{/* パソコンやスマホのお悩み相談カード */}
+								<div className="flex-1 rounded-3xl border border-gray-200 p-7 sm:w-1/2 sm:p-8">
+									<div className="leading-relaxed">
+										<p className="">パソコンやスマホのお悩み相談</p>
+										<p className="mt-4 pl-1">
+											<span className="text-lg">3,000円</span>
+											<span className="text-gray-600"> + 税</span>
+										</p>
+										<ul className="flex flex-col gap-1 mt-4 list-disc pl-5 text-sm">
+											<li>購入相談</li>
+											<li>使い方のレクチャー</li>
+											<li>調べもの</li>
+											<li>アプリやソフトの活用方法</li>
+										</ul>
+										<p className="mt-2 text-sm text-gray-600">※その他のご相談はお見積りいたします。</p>
+									</div>
+								</div >
+								{/* Webサイト/LP制作カード */}
+								<div className="mt-4 flex-1 rounded-3xl border border-gray-200 p-7 sm:mt-0 sm:w-1/2 sm:p-8">
+									<div className="leading-relaxed">
+										<p className="">Webサイト/LP制作</p>
+										<p className="mt-4 pl-1">
+											<span className="text-lg">50,000円 ～</span>
+											<span className="text-gray-600"> + 税</span>
+										</p>
+										<ul className="flex flex-col gap-1 mt-4 list-disc pl-5 text-sm">
+											<li>要件定義</li>
+											<li>UI設計</li>
+											<li>コーディング</li>
+											<li>公開</li>
+										</ul>
+										<div className="mt-2 text-sm text-gray-600 space-y-0.5">
+											<p>※上記金額はあくまで目安です。</p>
+											<p>Webサイトの構成やご要望によってお見積りが変動いたします。</p>
+											<p>まずはお気軽にご相談ください。</p>
+										</div>
+									</div>
+								</div>
+							</div>
 							<ContactCard />
 						</div>
 					</div>
