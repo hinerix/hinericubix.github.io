@@ -45,7 +45,7 @@ export default function RootLayout({
 					})}
 				</script>
 			</head>
-			<body className="bg-gradient-to-tl from-amber-50 to-yellow-50 text-gray-900 selection:bg-sky-100">{children}</body>
+			<body className="bg-amber-50 text-gray-900 selection:bg-sky-100">{children}</body>
 		</html>
 	);
 }

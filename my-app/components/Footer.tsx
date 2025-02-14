@@ -10,7 +10,7 @@ export default function Footer() {
 						>
 							ひねりキュービックス
 						</a>
-						<p className="text-gray-600 text-xs mt-1">パソコンやスマホの「ちょっとした困った」を<br />気軽に相談できるサービス</p>
+						<p className="text-gray-600 text-xs mt-1">パソコンやスマホの「ちょっと困った」を<br />気軽に相談できるサービス</p>
 					</div>
 
 						<div className="flex gap-6 md:gap-24">
